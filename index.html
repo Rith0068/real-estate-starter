@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/styles/scroller.css">
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="styles/components/agent-card.css">
     <link rel="stylesheet" href="/styles/components/card-items.css">
     <link rel="stylesheet" href="/styles/components/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -228,22 +229,6 @@
                     <p>Expert agents bring knowledge and experience, ensuring tasks are handled with precision and confidence.</p>
                 </div>
             </article>
-
-            <!-- <article class="card-top">
-                <img class="card-top__media" src="public/assets/images/apartment.jpeg" alt="Apartments" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Apartments</h3>
-                    <div class="card-top__meta">City living</div>
-                </div>
-            </article>
-
-            <article class="card-top">
-                <img class="card-top__media" src="public/assets/images/house.png" alt="Houses" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Houses</h3>
-                    <div class="card-top__meta">Family homes</div>
-                </div>
-            </article> -->
         </div>
     </section>
 
@@ -340,70 +325,105 @@
             <h2 class="section__title">Meet Our Agents</h2>
             <p>This option comes at a very affordable price, making it accessible without compromising <br>
              quality. It’s a budget‑friendly choice that delivers great value for the cost.</p>
-            <!-- <a class="section__link" href="#">Show More</a> -->
         </div>
         
         <div class="section__agents">
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=12" alt="Agent Dara" />
-                <div>
-                    <div><strong>Dara</strong> • Phnom Penh</div>
-                    <div class="card__meta">Apartments</div>
-                    <p class="agent-infor">
-                        
-                    </p>
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="/public/assets/images/agent.jpg" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
                 </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=32" alt="Agent Sreyneang" />
-                <div>
-                    <div><strong>Sreyneang</strong> • Siem Reap</div>
-                    <div class="card__meta">Houses & Villa</div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
                 </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=32" alt="Agent Sreyneang" />
-                <div>
-                    <div><strong>Sreyneang</strong> • Siem Reap</div>
-                    <div class="card__meta">Houses & land</div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
                 </div>
-            </div>
-            <div class="agent">
-                <img class="agent__avatar" src="https://i.pravatar.cc/100?img=22" alt="Agent Vuthy" />
-                <div>
-                    <div><strong>Vuthy</strong> • Battambang</div>
-                    <div class="card__meta">Budget rentals</div>
+            </a>
+
+            <a class="agent-card" href="">
+                <div class="agent-card-content">
+                    <div class="img-cols">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="">
+                    </div>
+
+                    <h1>Ou Domveasna</h1>
+                    <span>Toul Kok Agent</span>
+                    <p>This option comes at a very affordable price, making it accessible without compromising quality. It’s a budget‑friendly choice.</p>
                 </div>
-            </div>
+            </a>
+        </div> 
+
+        <div class="section__head">
+            <a class="section__link" href="#">Show More</a>
         </div>
     </section>
 
-    <!-- ===== Why Us? + Inquiry Form ===== -->
+        <!-- ===== Social + Subscribe ===== -->
     <section class="section container">
-        <div class="container why">
-            <h2 class="section__title" style="margin:0 0 8px">Why Choose KH Realty?</h2>
-            <ul class="why__list">
-                <li>Affordable options for students and workers</li>
-                <li>Bilingual support (Khmer & English)</li>
-                <li>Verified agents across key districts</li>
-            </ul>
+        <div class="container subscribe">
+            <h2 class="section__title" style="margin:0">Let’s us help</h2>
+            <p class="section__hint">Latest affordable listings, once a week</p>
 
-            <h2 class="section__title" style="margin:0 0 8px">Inquiry Form</h2>
-            <form class="inquiry form" action="#">
-                <div class="form__group">
-                    <label for="inq-name">Your name</label>
-                    <input class="input" id="inq-name" type="text" placeholder="e.g., Sokha" required>
-                </div>
-                <div class="form__group">
-                    <label for="inq-email">Email</label>
-                    <input class="input" id="inq-email" type="email" placeholder="you@example.com" required>
-                </div>
-                <div class="form__group">
-                    <label for="inq-msg">Message</label>
-                    <textarea class="input" id="inq-msg" rows="3" placeholder="What are you looking for?"></textarea>
-                </div>
-                <button class="btn" type="submit">Send Inquiry</button>
-            </form>
+            <div class="subscribe__row">
+                <label for="">Type</label>
+
+                <select class="subscribe__select" aria-label="Type" id="selectType">
+                    <option>Room</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                </select>
+            </div>
+
+            <div class="subscribe__row">
+                <label for="">Full name</label>
+                <input class="input" type="text" placeholder="Enter your fullname" aria-label="Name">
+            </div>
+
+            <div class="subscribe__row">
+                <label for="">Email</label>
+                <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
+            </div>
+
+            <div class="subscribe__row">
+                <label for="">Phone number</label>
+                <input class="input" type="tel" placeholder="Enter your phnne number" aria-label="Phone Number">
+            </div>
+
+            
+
+            <div class="subscribe__row">
+                 <input class="sub-btn" type="submit" value="Subscribe">
+            </div>  
+            
+            <div class="section__actions" style="margin-top:10px">
+                <button class="pill" aria-label="Facebook">Facebook</button>
+                <button class="pill" aria-label="Telegram">Telegram</button>
+                <button class="pill" aria-label="YouTube">YouTube</button>
+            </div>
         </div>
     </section>
 
@@ -428,23 +448,6 @@
                         <div class="quote__name">— Vuthy, Technician</div>
                     </blockquote>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Social + Subscribe ===== -->
-    <section class="section container">
-        <div class="container subscribe">
-            <h2 class="section__title" style="margin:0">Stay in the loop</h2>
-            <p class="section__hint">Latest affordable listings, once a week</p>
-            <div class="subscribe__row">
-                <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
-                <button class="btn" type="button">Subscribe</button>
-            </div>
-            <div class="section__actions" style="margin-top:10px">
-                <button class="pill" aria-label="Facebook">Facebook</button>
-                <button class="pill" aria-label="Telegram">Telegram</button>
-                <button class="pill" aria-label="YouTube">YouTube</button>
             </div>
         </div>
     </section>
