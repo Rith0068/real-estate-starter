@@ -43,8 +43,8 @@
                     </li>
                     
                     <li><a class="active" href="#heroSection">Home</a></li>
-                    <li><a href="/pages/rent/index.html">Rent</a></li>
-                    <li><a href="/pages/buy/index.html">Buy</a></li>
+                    <li><a href="/pages/rent/index.html?filter=rent">Rent</a></li>
+                    <li><a href="/pages/buy/index.html?filter=sale">Buy</a></li>
                     <li><a href="/pages/agents/index.html">Agents</a></li>
                     <li><a href="/pages/about/index.html">About</a></li>
                     <li><a href="/pages/contact/index.html">Contact</a></li>
@@ -52,8 +52,8 @@
 
                 <ul>
                     <li><a class="hideOnMobile active" href="#heroSection">Home</a></li>
-                    <li><a class="hideOnMobile" href="/pages/rent/index.html">Rent</a></li>
-                    <li><a class="hideOnMobile" href="/pages/buy/index.html">Buy</a></li>
+                    <li><a class="hideOnMobile" href="/pages/rent/index.html?filter=rent">Rent</a></li>
+                    <li><a class="hideOnMobile" href="/pages/buy/index.html?filter=sale">Buy</a></li>
                     <li><a class="hideOnMobile" href="/pages/agents/index.html">Agents</a></li>
                     <li><a class="hideOnMobile" href="/pages/about/index.html">About</a></li>
                     <li><a class="hideOnMobile" href="/pages/contact/index.html">Contact</a></li>
@@ -109,7 +109,9 @@
                         <option>Apartment</option>
                         <option>House</option>
                     </select>
-                    <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
+                    <input class="hero__input" id="searchInput" type="text" placeholder="City or district" aria-label="Location" />
+                    <div id="results"></div>
+
                     <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
                     <button class="hero__btn" type="submit">Search</button>
                 </form>
@@ -230,7 +232,7 @@
         </div>
 
         <div class="section__head">
-            <a class="section__link" href="pages/listing/index.html">Show More</a>
+            <a class="section__link" href="/pages/listing/index.html">Show More</a>
         </div>
         <script src="scripts/card-items.js"></script>
     </section>
@@ -261,66 +263,70 @@
             <h2 class="section__title" style="margin:0">Let’s us help</h2>
             <p class="section__hint">Latest affordable listings, once a week</p>
 
-            <div class="subscribe__row">
-                <label for="">Type</label>
+            <form action="/pages/Success/index.html">
+                <div class="subscribe__row">
+                    <label for="">Type</label>
 
-                <select class="subscribe__select" aria-label="Type" id="selectType">
-                    <option value="">select</option>
-                    <option>Room</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-            </div>
+                    <select class="subscribe__select" aria-label="Type" id="selectType">
+                        <option value="">select</option>
+                        <option>Room</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                    </select>
+                </div>
 
-            <div class="subscribe__row">
-                <label for="">Full name</label>
-                <input class="input" type="text" placeholder="Enter your fullname" aria-label="Name">
-            </div>
+                <div class="subscribe__row">
+                    <label for="">Full name</label>
+                    <input class="input" type="text" placeholder="Enter your fullname" aria-label="Name">
+                </div>
 
-            <div class="subscribe__row">
-                <label for="">Email</label>
-                <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
-            </div>
+                <div class="subscribe__row">
+                    <label for="">Email</label>
+                    <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
+                </div>
 
-            <div class="subscribe__row">
-                <label for="">Phone number</label>
-                <input class="input" type="tel" placeholder="Enter your phnne number" aria-label="Phone Number">
-            </div>
+                <div class="subscribe__row">
+                    <label for="">Phone number</label>
+                    <input class="input" type="tel" placeholder="Enter your phnne number" aria-label="Phone Number">
+                </div>
 
-            <div class="subscribe__row">
-                <label for="">Location</label>
+                <div class="subscribe__row">
+                    <label for="">Location</label>
 
-                <select class="subscribe__select" aria-label="Type" id="selectType">
-                    <option value="">select</option>
-                    <option>Phnom Pen</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-            </div>
+                    <select class="subscribe__select" aria-label="Type" id="selectType">
+                        <option value="">select</option>
+                        <option>Phnom Pen</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                    </select>
+                </div>
 
-            <div class="subscribe__row">
-                 <input class="sub-btn" type="submit" value="Subscribe">
-            </div>  
+                <div class="subscribe-btn">
+                    <input class="sub-btn" type="submit" value="Subscribe">
+                </div>  
+            </form>
         </div>
     </section>
 
     <!-- ===== Subscription Card ===== -->
     <section class="section container">
-        <div class="subscription-card">
-            <div class="sub-card-bg">
-                <img src="/public/assets/images/sub-img.jpeg" alt="">
-            </div>
+        <form action="/pages/Success/index.html">
+            <div class="subscription-card">
+                <div class="sub-card-bg">
+                    <img src="/public/assets/images/sub-img.jpeg" alt="">
+                </div>
 
-            <div class="sub-card-content">
-                <h1>Stay in touch with us!</h1>
-                <p>Get the latest news, updates, and exclusive offers straight to your inbox.</p>
+                <div class="sub-card-content">
+                    <h1>Stay in touch with us!</h1>
+                    <p>Get the latest news, updates, and exclusive offers straight to your inbox.</p>
 
-                <div class="subscription-inputs">
-                    <input type="email" placeholder="Enter your email" class="fill-in">
-                    <button type="submit" class="submit">Subscribe</button>
+                    <div class="subscription-inputs">
+                        <input type="email" placeholder="Enter your email" class="fill-in">
+                        <button type="submit" class="submit">Subscribe</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </section>
 
 
@@ -345,7 +351,7 @@
 
         <nav aria-label="footer-links">
                 <div class="footer__small">
-                    <a href="#">Rent</a> • <a href="#">Buy</a> • <a href="#">Agents</a> • <a href="#">Contact</a>
+                    <a href="/pages/rent/index.html?purpose=rent">Rent</a> • <a href="/pages/rent/index.html?purpose=rent">Buy</a> • <a href="pages/agents/index.html">Agents</a> • <a href="pages/contact/index.html">Contact</a>
                 </div>
         </nav>
 
@@ -373,6 +379,7 @@
             select: '#selectType'
         })
     </script>
+
 
     <script src="/scripts/scroller.js"></script>
     <!-- <script src="/scripts/index.js"></script> -->

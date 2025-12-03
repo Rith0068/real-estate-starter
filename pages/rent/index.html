@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent | Apple Real Estate</title>
+    <title>Sale | Apple Real Estate</title>
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/components/footer.css">
     <link rel="stylesheet" href="../../styles/components/nav-second.css">
     <link rel="stylesheet" href="../../styles/components/card-items.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -78,36 +79,60 @@
         <div class="filter-content">
             <div class="filter">
                 <h3 class="t-filter">Type</h3>
-                <div class="t-btn">
-                    <button class="btn-sell">For Sale</button>
-                    <button class="btn-rent">For Rent</button>
-                </div>
-            </div>
 
-            <div class="filter">
-                <h3 class="t-filter">Price</h3>
                 <div class="t-btn">
-                    <button class="btn-sell">Low</button>
-                    <button class="btn-rent">High</button>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="sale">For Sale</button>
+                    <button class="filter-btn" data-filter="rent">For Rent</button>
                 </div>
             </div>
 
             <div class="filter">
                 <h3 class="t-filter">Property Type</h3>
+
                 <div class="t-btn">
-                    <button class="btn-sell">House</button>
-                    <button class="btn-rent">Condo</button>
-                    <button class="btn-extra">Apartment</button> 
+                    <button class="filter-btn" data-filter="house">House</button>
+                    <button class="filter-btn" data-filter="condo">Condo</button>
+                    <button class="filter-btn" data-filter="apartment">Apartment</button>
                 </div>
             </div>
         </div>
 
-        <div class="card-grid-groups" id="saleColsCard" aria-label="Latest properties">
+        <div class="card-grid-groups" id="rentColsCard" aria-label="Latest properties"></div>
 
-        </div>
+        <!-- pagination -->
+        <div id="pagination" class="pagination"></div>
 
         <script src="index.js"></script>
     </section>
 
+    <footer class="footer">
+        <div class="img-footer">
+            <a href=""><img src="/public/assets/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="footer-infor">
+            <h1>Excellence <span>Defined</span>. Lifestyle <span>Redefined</span>.</h1>
+            <p>We are committed to delivering premium real estate solutions that blend modern living with long-term value. With a focus on quality, innovation, and customer satisfaction, we create spaces that inspire and elevate everyday life. Your future begins with a home built on excellence.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>CONTACT US:</p>
+             <div class="contact-cols">
+                <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+                <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+             </div>
+        </div>
+
+        <nav aria-label="footer-links">
+                <div class="footer__small">
+                    <a href="/pages/rent/index.html?purpose=rent">Rent</a> • <a href="/pages/rent/index.html?purpose=rent">Buy</a> • <a href="../agents/index.html">Agents</a> • <a href="../contact/index.html">Contact</a>
+                </div>
+        </nav>
+
+        <div class="copyright">
+            <small>© 2025 Apple KH Real Estate. All Rights Reserved.</small>
+        </div>
+    </footer>
 </body>
 </html>

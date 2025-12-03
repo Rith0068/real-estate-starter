@@ -10,7 +10,7 @@ fetch("../public/data/properties.json")
             sectionItemsElement.innerHTML += `
             <article class="card-items" href="">
                 <div class="card-items_media">
-                <a href=""><img src="${data[i].images}" alt=""></a>
+                <a href="/pages/detail-card/index.html?id=${data[i].id}"><img src="${data[i].images}" alt=""></a>
                 </div>
 
                 <div class="card-items__body">
@@ -27,7 +27,7 @@ fetch("../public/data/properties.json")
                     </small>
 
                     <div class="card-btn">
-                        <a href="">View Detail</a>
+                        <a href="/pages/detail-card/index.html?id=${data[i].id}">View Detail</a>
                     </div>
                 </div>
             </article>

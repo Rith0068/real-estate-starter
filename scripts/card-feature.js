@@ -9,7 +9,7 @@ fetch("../public/data/properties.json")
             console.log(data);
             
             sectionFeatureElement.innerHTML += `
-            <a class="card" href="/property/${data[i].title.en}">
+            <a class="card" href="/pages/detail-card/index.html?id=${data[i].id}">
                 <img class="card__media" src="${data[i].images}"
                     alt="" />
                 <div class="card__body">

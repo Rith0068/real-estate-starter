@@ -22,6 +22,8 @@
 
   --acent-secondary: #F0E8E8;
 
+  --input: #ffffff;
+
   /* accent highlight */
 
   --acent-hover: #FAB21E;
@@ -63,6 +65,7 @@
   --acent: #322c2c;
   --acent-secondary: #2D2424;
   --acent-hover: #FAB21E;
+  --input: #514949;
   --border: #3A2E2E;
 }
 
@@ -76,6 +79,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 60px;
 }
 
 body {
@@ -153,6 +157,10 @@ img {
   gap: 12px;
 }
 
+.hero__form select {
+  background-color: var(--input);
+}
+
 .hero__row {
   display: grid;
   gap: 12px;
@@ -164,17 +172,17 @@ img {
   padding: 14px 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  background: var(--input);
   font-family: var(--font-family);
 }
 
 .hero__select {
   appearance: none;
   &:open {
-    background-color: var(--acent-secondary);
+    background-color: var(--input);
   }
   option {
-    background-color: var(--bg);
+    background-color: var(--input);
   }
 }
 
@@ -313,6 +321,10 @@ img {
   padding: 32px 46px;
 }
 
+.subscribe form {
+  width: 100%;
+}
+
 .subscribe__row {
   width: 100%;
   display: grid;
@@ -320,16 +332,26 @@ img {
   margin-top: 8px;
 }
 
+.subscribe-btn {
+  width: 100%;
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+
 .subscribe__select {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px;
-  background: #fff;
+  color: var(--text);
+  background: var(--input);
   font-family: var(--font-family);
 }
 
 .subscribe__row input {
   border: 1px solid var(--border);
+  background-color: var(--input);
 }
 
 .sub-btn {

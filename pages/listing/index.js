@@ -1,4 +1,4 @@
-const sectionRentElement = document.getElementById("saleColsCard");
+const sectionSaleElement = document.getElementById("saleColsCard");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const paginationContainer = document.getElementById("pagination");
 
@@ -7,29 +7,24 @@ let filteredProperties = [];
 let currentPage = 1;
 const itemsPerPage = 12; // 12 cards per page
 
-// Read URL parameter for default filter
-const urlParams = new URLSearchParams(window.location.search);
-const defaultFilter = urlParams.get("filter") || "sale"; // default to rent if nav clicked
-
 // Fetch data
 fetch("../../public/data/properties.json")
   .then((response) => response.json())
   .then((data) => {
     properties = data;
-
-    // Apply default filter
-    applyFilter(defaultFilter);
+    filteredProperties = properties; // show all initially
+    renderPage(currentPage);
   });
 
 // Render cards for the current page
 function renderPage(page) {
-  sectionRentElement.innerHTML = "";
+  sectionSaleElement.innerHTML = "";
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;
   const itemsToShow = filteredProperties.slice(start, end);
 
   itemsToShow.forEach((item) => {
-    sectionRentElement.innerHTML += `
+    sectionSaleElement.innerHTML += `
       <article class="card-items">
         <div class="card-items_media">
           <a href="/pages/detail-card/index.html?id=${item.id}">
@@ -82,27 +77,20 @@ function renderPagination() {
   });
 }
 
-// Apply a filter
-function applyFilter(filter) {
-  // Set active button
-  filterButtons.forEach((b) => b.classList.remove("active"));
-  const activeBtn = Array.from(filterButtons).find(b => b.dataset.filter === filter);
-  if (activeBtn) activeBtn.classList.add("active");
-
-  // Filter data dynamically
-  if (filter === "all") filteredProperties = properties; // show everything
-  else if (filter === "sale") filteredProperties = properties.filter(item => item.purpose === "sale");
-  else if (filter === "rent") filteredProperties = properties.filter(item => item.purpose === "rent");
-  else filteredProperties = properties.filter(item => item.type === filter);
-
-  currentPage = 1; // reset to first page
-  renderPage(currentPage);
-}
-
-// Filter buttons click
-filterButtons.forEach(btn => {
+// Filter buttons functionality
+filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
     const filter = btn.dataset.filter;
-    applyFilter(filter);
+
+    if (filter === "all") filteredProperties = properties;
+    else if (filter === "sale") filteredProperties = properties.filter((item) => item.purpose === "sale");
+    else if (filter === "rent") filteredProperties = properties.filter((item) => item.purpose === "rent");
+    else filteredProperties = properties.filter((item) => item.type === filter);
+
+    currentPage = 1; // reset to first page after filter
+    renderPage(currentPage);
   });
 });

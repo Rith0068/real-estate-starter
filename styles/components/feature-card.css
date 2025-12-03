@@ -58,13 +58,39 @@
   color: var(--acent-hover);
 }
 
-/* .btn {
-  width: none;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
 
-.btn a {
-  padding: 12px 24px;
-} */
+
+/* responsive feature card */
+@media (max-width: 768px) {
+  .feature-card {
+    flex: 0 0 14em; /* smaller card width */
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .card__media {
+    border-radius: 8px;
+  }
+
+  .card__body {
+    padding: 8px 3px;
+  }
+
+  .card__body small,
+  .card__body i {
+    font-size: 0.8rem;
+  }
+
+  .card__title {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+
+  .card__meta {
+    font-size: 1.1rem;
+  }
+
+  .badge {
+    font-size: 0.9rem;
+  }
+}
