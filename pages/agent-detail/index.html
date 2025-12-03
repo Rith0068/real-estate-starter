@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Agent detail</title>
+    <title>Agent Detail | Apple Real Estate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Affordable rentals and homes in Cambodia." />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/components/nav-second.css">
     <link rel="stylesheet" href="../../styles/components/card-items.css">
+    <link rel="stylesheet" href="../../styles/components/agent-card.css">
     <link rel="stylesheet" href="../../styles/components/subscription.css">
     <link rel="icon" type="image/x-icon" href="../../public/assets/images/company/favicon.ico">
     <link rel="stylesheet" href="../../https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="/styles/components/card-items.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
     
 
 
@@ -38,7 +40,7 @@
                     <li><a href="../rent/index.html">Rent</a></li>
                     <li><a href="../buy/index.html">Buy</a></li>
                     <li><a href="../agents/index.html">Agents</a></li>
-                    <li><a class="active" href="">About</a></li>
+                    <li><a href="../about/index.html">About</a></li>
                     <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
 
@@ -47,7 +49,7 @@
                     <li><a class="hideOnMobile" href="../rent/index.html">Rent</a></li>
                     <li><a class="hideOnMobile" href="../buy/index.html">Buy</a></li>
                     <li><a class="hideOnMobile" href="../agents/index.html">Agents</a></li>
-                    <li><a class="hideOnMobile active" href="">About</a></li>
+                    <li><a class="hideOnMobile" href="../about/index.html">About</a></li>
                     <li><a class="hideOnMobile" href="../contact/index.html">Contact</a></li>
                 </ul>
             </div>
@@ -81,100 +83,114 @@
         </nav>
     </header>
 
-    <section class="container">
-        <div class="agent-cols">
-            <div class="img">
-                <img src="/public/assets/images/agent  pf.png" alt="">
-            </div>
-
-            <div class="agent-pf">
-                <h1>Aiko Yuri</h1>
-                <p>Toul Kok Agent</p>
-                <div class="contact-cols">
-                     <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
-                    <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+    <section class="container" id="agentCardDetail">
+        <div class="agent-detail-cols">
+            <div class="agent-cols">
+                <div class="img">
+                    <img src="/public/assets/images/agent  pf.png" alt="Agent Photo">
                 </div>
-                   
+
+                <div class="agent-pf">
+                    <h1>Aiko Yuri</h1>
+                    <p>Toul Kok Agent</p>
+                    <div class="contact-cols">
+                        <span><i class="fa-solid fa-phone"></i> 012 345 678</span>
+                        <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid-groups agent-infor" aria-label="Property categories">
+                <!-- Feature Section -->
+                <div class="feature">
+                    <h1>Featured Offers</h1>
+                    <div class="feature-items">
+                        <div class="feature-item">
+                            <span class="icon"><span class="material-symbols-outlined">apartment</span> </span>
+                            <p>Condo Specialist with 5+ Years Experience</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon"><i class="fas fa-star"></i></span>
+                            <p>Top Rated Local Agent</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon"><span class="material-symbols-outlined">bar_chart_4_bars</span></span>
+                            <p>Proven Track Record in Sales</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon"><i class="fas fa-handshake"></i></span>
+                            <p>Personalized Service for Every Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Profile Section -->
+                <div class="personal">
+                    <h1>About Me</h1>
+                    <p>Hello! I'm , a dedicated real estate agent specializing in condos. I believe buying or selling a home should be smooth and stress-free.</p>
+                    <p>With deep knowledge of the local market, I guide my clients every step of the way—from understanding trends to closing the deal. My goal is to provide personalized service tailored to your needs.</p>
+                    <p>Feel free to explore my listings and profile. I'm always happy to answer questions and help you achieve your real estate goals!</p>
+                </div>
+            </div>
+
+            <div class="container subscribe">
+                <h2 class="section__title" style="margin:0">Let’s us help</h2>
+                <p class="section__hint">Latest affordable listings, once a week</p>
+
+                <div class="subscribe__row">
+                    <label for="">Type</label>
+
+                    <select class="subscribe__select" aria-label="Type" id="selectType">
+                        <option value="">select</option>
+                        <option>Room</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                    </select>
+                </div>
+
+                <div class="subscribe__row">
+                    <label for="">Full name</label>
+                    <input class="input" type="text" placeholder="Enter your full name" aria-label="Name">
+                </div>
+
+                <div class="subscribe__row">
+                    <label for="">Email</label>
+                    <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
+                </div>
+
+                <div class="subscribe__row">
+                    <label for="">Phone number</label>
+                    <input class="input" type="tel" placeholder="Enter your phnne number" aria-label="Phone Number">
+                </div>
+
+                <div class="subscribe__row">
+                    <label for="">Location</label>
+
+                    <select class="subscribe__select" aria-label="Type" id="selectType">
+                        <option value="">select</option>
+                        <option>Phnom Pen</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                    </select>
+                </div>
+
+                <div class="subscribe__row">
+                    <input class="sub-btn" type="submit" value="Subscribe">
+                </div>  
             </div>
         </div>
+        
     </section>
-
-    <section class="container">
-         <div class="card-grid-groups" aria-label="Property categories">
-            <div class="feature">
-                <h1>Features Offers</h1>
-                <span>Condo Specialist</span>
-            </div>
-            <div class="personal">
-                <h1> Personal Profile</h1>
-                <span>Condo I feel that having the right real estate agent means
-                having an agent who is committed to helping you buy or sell
-                your home with the highest level of expertise in your local
-                market. This means also to help you in understanding each
-                step of the buying or selling process. Feel free to browse
-                through my profile and please don't hesitate to reach out for
-                any of your real estate needs.</span>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="section container">
-        <div class="container subscribe">
-            <h2 class="section__title" style="margin:0">Let’s us help</h2>
-            <p class="section__hint">Latest affordable listings, once a week</p>
-
-            <div class="subscribe__row">
-                <label for="">Type</label>
-
-                <select class="subscribe__select" aria-label="Type" id="selectType">
-                    <option value="">select</option>
-                    <option>Room</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-            </div>
-
-            <div class="subscribe__row">
-                <label for="">Full name</label>
-                <input class="input" type="text" placeholder="Enter your full name" aria-label="Name">
-            </div>
-
-            <div class="subscribe__row">
-                <label for="">Email</label>
-                <input class="input" type="email" placeholder="Enter your email" aria-label="Email">
-            </div>
-
-            <div class="subscribe__row">
-                <label for="">Phone number</label>
-                <input class="input" type="tel" placeholder="Enter your phnne number" aria-label="Phone Number">
-            </div>
-
-            <div class="subscribe__row">
-                <label for="">Location</label>
-
-                <select class="subscribe__select" aria-label="Type" id="selectType">
-                    <option value="">select</option>
-                    <option>Phnom Pen</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-            </div>
-
-            <div class="subscribe__row">
-                 <input class="sub-btn" type="submit" value="Subscribe">
-            </div>  
-        </div>
-    </section>
-
-    
 
    <section class="container">
         <h1>Related to Aiko Yuri </h1>
 
         <div class="card-grid-groups" id="relatedToAgent" aria-label="Latest properties">
-        
+            
+        </div>
+
+        <div class="section__head">
+            <a class="section__link" href="/pages/agents/index.html">Show More</a>
         </div>
 
         <script src="index.js"></script>
@@ -210,6 +226,6 @@
         </div>
     </footer> 
 
-
+    <script src="index.js"></script>
 </body>
 </html>

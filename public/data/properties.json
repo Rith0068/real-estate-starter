@@ -19,14 +19,17 @@
     "area": 65,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
-    "features": ["Air Conditioning", "Balcony", "Parking"],
+    "features": {
+      "feature_1": "Air Conditioning",
+      "feature_2": "Balcony",
+      "feature_3": "Parking"
+    },
     "agent_id": 301,
     "posted_date": "2025-11-10",
     "is_available": "yes",
     "is_featured": "no",
     "is_latest": "no"
   },
-  
   {
     "id": 2,
     "title": {
@@ -47,7 +50,11 @@
     "area": 45,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
-    "features": ["Gym", "Elevator", "Security"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Elevator",
+      "feature_3": "Security"
+    },
     "agent_id": 302,
     "posted_date": "2025-11-11",
     "is_available": "yes",
@@ -74,7 +81,11 @@
     "area": 78,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
-    "features": ["Swimming Pool", "Gym", "Parking"],
+    "features": {
+      "feature_1": "Swimming Pool",
+      "feature_2": "Gym",
+      "feature_3": "Parking"
+    },
     "agent_id": 303,
     "posted_date": "2025-11-12",
     "is_available": "yes",
@@ -101,7 +112,11 @@
     "area": 320,
     "unit": "m²",
     "images": ["/public/assets/images/properties/villas/villa-1.webp"],
-    "features": ["Garden", "Parking", "Security"],
+    "features": {
+      "feature_1": "Garden",
+      "feature_2": "Parking",
+      "feature_3": "Security"
+    },
     "agent_id": 304,
     "posted_date": "2025-10-28",
     "is_available": "yes",
@@ -128,7 +143,10 @@
     "area": 120,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-1.webp"],
-    "features": ["Parking", "Pet Friendly"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Pet Friendly"
+    },
     "agent_id": 305,
     "posted_date": "2025-11-05",
     "is_available": "yes",
@@ -155,7 +173,9 @@
     "area": 40,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 306,
     "posted_date": "2025-10-30",
     "is_available": "yes",
@@ -184,7 +204,10 @@
     "images": [
       "/public/assets/images/properties/commercials/commercial-1.webp"
     ],
-    "features": ["Elevator", "Parking"],
+    "features": {
+      "feature_1": "Elevator",
+      "feature_2": "Parking"
+    },
     "agent_id": 307,
     "posted_date": "2025-11-15",
     "is_available": "yes",
@@ -211,7 +234,10 @@
     "area": 200,
     "unit": "m²",
     "images": ["/public/assets/images/properties/shop_houses/shop_house-1.jpg"],
-    "features": ["Parking", "Business Area"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Business Area"
+    },
     "agent_id": 308,
     "posted_date": "2025-11-13",
     "is_available": "yes",
@@ -220,7 +246,10 @@
   },
   {
     "id": 9,
-    "title": { "en": "Condo with Pool", "km": "ខុនដូឃើញទឹកស៊ូវិមិញ" },
+    "title": {
+      "en": "Condo with Pool",
+      "km": "ខុនដូឃើញទឹកស៊ូវិមិញ"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 600,
@@ -235,7 +264,10 @@
     "area": 55,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-2.webp"],
-    "features": ["Swimming Pool", "Gym"],
+    "features": {
+      "feature_1": "Swimming Pool",
+      "feature_2": "Gym"
+    },
     "agent_id": 309,
     "posted_date": "2025-09-10",
     "is_available": "yes",
@@ -262,7 +294,10 @@
     "area": 50,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
-    "features": ["Cleaning Service", "Security"],
+    "features": {
+      "feature_1": "Cleaning Service",
+      "feature_2": "Security"
+    },
     "agent_id": 310,
     "posted_date": "2025-11-07",
     "is_available": "yes",
@@ -271,7 +306,10 @@
   },
   {
     "id": 11,
-    "title": { "en": "Land for Sale", "km": "ដីលក់នៅខណ្ឌកណ្តាល" },
+    "title": {
+      "en": "Land for Sale",
+      "km": "ដីលក់នៅខណ្ឌកណ្តាល"
+    },
     "type": "land",
     "purpose": "sale",
     "price": 75000,
@@ -286,7 +324,9 @@
     "area": 500,
     "unit": "m²",
     "images": ["/public/assets/images/properties/lands/land-1.jpg"],
-    "features": ["Main Road Access"],
+    "features": {
+      "feature_1": "Main Road Access"
+    },
     "agent_id": 311,
     "posted_date": "2025-10-20",
     "is_available": "yes",
@@ -313,7 +353,10 @@
     "area": 48,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
-    "features": ["Gym", "Balcony"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Balcony"
+    },
     "agent_id": 312,
     "posted_date": "2025-11-14",
     "is_available": "yes",
@@ -340,7 +383,11 @@
     "area": 280,
     "unit": "m²",
     "images": ["/public/assets/images/properties/villas/villa-2.webp"],
-    "features": ["Garden", "Parking", "Security"],
+    "features": {
+      "feature_1": "Garden",
+      "feature_2": "Parking",
+      "feature_3": "Security"
+    },
     "agent_id": 313,
     "posted_date": "2025-11-12",
     "is_available": "yes",
@@ -349,7 +396,10 @@
   },
   {
     "id": 14,
-    "title": { "en": "Penthouse", "km": "ផេនថោសអាផាតមិននៅ BKK1" },
+    "title": {
+      "en": "Penthouse",
+      "km": "ផេនថោសអាផាតមិននៅ BKK1"
+    },
     "type": "condo",
     "purpose": "sale",
     "price": 220000,
@@ -364,7 +414,11 @@
     "area": 110,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
-    "features": ["Rooftop Access", "Pool", "Gym"],
+    "features": {
+      "feature_1": "Rooftop Access",
+      "feature_2": "Pool",
+      "feature_3": "Gym"
+    },
     "agent_id": 314,
     "posted_date": "2025-11-01",
     "is_available": "yes",
@@ -391,7 +445,10 @@
     "area": 52,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
-    "features": ["Balcony", "Elevator"],
+    "features": {
+      "feature_1": "Balcony",
+      "feature_2": "Elevator"
+    },
     "agent_id": 315,
     "posted_date": "2025-11-09",
     "is_available": "yes",
@@ -418,7 +475,10 @@
     "area": 280,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-2.webp"],
-    "features": ["Parking", "Garden"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Garden"
+    },
     "agent_id": 316,
     "posted_date": "2025-11-04",
     "is_available": "yes",
@@ -445,7 +505,9 @@
     "area": 35,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
-    "features": ["Security"],
+    "features": {
+      "feature_1": "Security"
+    },
     "agent_id": 317,
     "posted_date": "2025-11-08",
     "is_available": "yes",
@@ -472,7 +534,11 @@
     "area": 90,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-2.webp"],
-    "features": ["Pool", "Gym", "River View"],
+    "features": {
+      "feature_1": "Pool",
+      "feature_2": "Gym",
+      "feature_3": "River View"
+    },
     "agent_id": 318,
     "posted_date": "2025-10-22",
     "is_available": "yes",
@@ -481,7 +547,10 @@
   },
   {
     "id": 19,
-    "title": { "en": "ShopSpace for Rent", "km": "ទីតាំងអាជីវកម្មឲ្យជួល" },
+    "title": {
+      "en": "ShopSpace for Rent",
+      "km": "ទីតាំងអាជីវកម្មឲ្យជួល"
+    },
     "type": "commercial",
     "purpose": "rent",
     "price": 1500,
@@ -496,7 +565,9 @@
     "area": 60,
     "unit": "m²",
     "images": ["/public/assets/images/properties/commercials/commercial-2.jpg"],
-    "features": ["Main Road Access"],
+    "features": {
+      "feature_1": "Main Road Access"
+    },
     "agent_id": 319,
     "posted_date": "2025-11-10",
     "is_available": "yes",
@@ -523,7 +594,10 @@
     "area": 160,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-3.jpg"],
-    "features": ["Balcony", "Parking"],
+    "features": {
+      "feature_1": "Balcony",
+      "feature_2": "Parking"
+    },
     "agent_id": 320,
     "posted_date": "2025-10-30",
     "is_available": "yes",
@@ -532,7 +606,10 @@
   },
   {
     "id": 21,
-    "title": { "en": "Land for Sale SR", "km": "ដីលក់នៅសៀមរាប" },
+    "title": {
+      "en": "Land for Sale SR",
+      "km": "ដីលក់នៅសៀមរាប"
+    },
     "type": "land",
     "purpose": "sale",
     "price": 50000,
@@ -547,7 +624,9 @@
     "area": 450,
     "unit": "m²",
     "images": ["/public/assets/images/properties/lands/land-2.webp"],
-    "features": ["Quiet Area"],
+    "features": {
+      "feature_1": "Quiet Area"
+    },
     "agent_id": 321,
     "posted_date": "2025-10-29",
     "is_available": "yes",
@@ -556,7 +635,10 @@
   },
   {
     "id": 22,
-    "title": { "en": "Villa with Pool", "km": "វីឡាមានអាងហែលទឹក" },
+    "title": {
+      "en": "Villa with Pool",
+      "km": "វីឡាមានអាងហែលទឹក"
+    },
     "type": "villa",
     "purpose": "rent",
     "price": 2500,
@@ -571,7 +653,11 @@
     "area": 350,
     "unit": "m²",
     "images": ["/public/assets/images/properties/villas/villa-3.webp"],
-    "features": ["Pool", "Garden", "Parking"],
+    "features": {
+      "feature_1": "Pool",
+      "feature_2": "Garden",
+      "feature_3": "Parking"
+    },
     "agent_id": 322,
     "posted_date": "2025-11-03",
     "is_available": "yes",
@@ -580,7 +666,10 @@
   },
   {
     "id": 23,
-    "title": { "en": "Modern Condo in Sen Sok", "km": "ខុនដូទំនើបនៅសែនសុខ" },
+    "title": {
+      "en": "Modern Condo in Sen Sok",
+      "km": "ខុនដូទំនើបនៅសែនសុខ"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 420,
@@ -595,7 +684,10 @@
     "area": 48,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
-    "features": ["Parking", "Gym"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Gym"
+    },
     "agent_id": 323,
     "posted_date": "2025-11-11",
     "is_available": "yes",
@@ -622,7 +714,9 @@
     "area": 135,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-1.webp"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 324,
     "posted_date": "2025-11-07",
     "is_available": "yes",
@@ -649,7 +743,9 @@
     "area": 38,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 325,
     "posted_date": "2025-11-02",
     "is_available": "yes",
@@ -658,7 +754,10 @@
   },
   {
     "id": 26,
-    "title": { "en": "Luxury Condo in BKK1", "km": "ខុនដូធូល៌នៅ BKK1" },
+    "title": {
+      "en": "Luxury Condo in BKK1",
+      "km": "ខុនដូធូល៌នៅ BKK1"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 1100,
@@ -673,7 +772,11 @@
     "area": 95,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
-    "features": ["Gym", "Pool", "Security"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Pool",
+      "feature_3": "Security"
+    },
     "agent_id": 326,
     "posted_date": "2025-11-09",
     "is_available": "yes",
@@ -700,7 +803,10 @@
     "area": 290,
     "unit": "m²",
     "images": ["/public/assets/images/properties/villas/villa-1.webp"],
-    "features": ["Parking", "Garden"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Garden"
+    },
     "agent_id": 327,
     "posted_date": "2025-10-28",
     "is_available": "yes",
@@ -729,7 +835,10 @@
     "images": [
       "/public/assets/images/properties/shop_houses/shop_house-2.webp"
     ],
-    "features": ["Parking", "Business Area"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Business Area"
+    },
     "agent_id": 328,
     "posted_date": "2025-11-06",
     "is_available": "yes",
@@ -738,7 +847,10 @@
   },
   {
     "id": 29,
-    "title": { "en": "Condo River View", "km": "ខុនដូទេសភាពទន្លេ" },
+    "title": {
+      "en": "Condo River View",
+      "km": "ខុនដូទេសភាពទន្លេ"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 750,
@@ -753,7 +865,10 @@
     "area": 80,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-2.webp"],
-    "features": ["River View", "Gym"],
+    "features": {
+      "feature_1": "River View",
+      "feature_2": "Gym"
+    },
     "agent_id": 329,
     "posted_date": "2025-11-13",
     "is_available": "yes",
@@ -780,7 +895,9 @@
     "area": 48,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
-    "features": ["Balcony"],
+    "features": {
+      "feature_1": "Balcony"
+    },
     "agent_id": 330,
     "posted_date": "2025-11-11",
     "is_available": "yes",
@@ -807,7 +924,9 @@
     "area": 160,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-2.webp"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 301,
     "posted_date": "2025-11-12",
     "is_available": "yes",
@@ -834,7 +953,9 @@
     "area": 35,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 302,
     "posted_date": "2025-11-11",
     "is_available": "yes",
@@ -861,7 +982,10 @@
     "area": 50,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
-    "features": ["Cleaning", "Parking"],
+    "features": {
+      "feature_1": "Cleaning",
+      "feature_2": "Parking"
+    },
     "agent_id": 303,
     "posted_date": "2025-11-09",
     "is_available": "yes",
@@ -870,7 +994,10 @@
   },
   {
     "id": 34,
-    "title": { "en": "Villa for Sale", "km": "វីឡាលក់នៅសៀមរាប" },
+    "title": {
+      "en": "Villa for Sale",
+      "km": "វីឡាលក់នៅសៀមរាប"
+    },
     "type": "villa",
     "purpose": "sale",
     "price": 250000,
@@ -885,7 +1012,10 @@
     "area": 220,
     "unit": "m²",
     "images": ["/public/assets/images/properties/villas/villa-2.webp"],
-    "features": ["Garden", "Parking"],
+    "features": {
+      "feature_1": "Garden",
+      "feature_2": "Parking"
+    },
     "agent_id": 304,
     "posted_date": "2025-11-08",
     "is_available": "yes",
@@ -894,7 +1024,10 @@
   },
   {
     "id": 35,
-    "title": { "en": "Condo in Olympia", "km": "ខុនដូក្នុង Olympia City" },
+    "title": {
+      "en": "Condo in Olympia",
+      "km": "ខុនដូក្នុង Olympia City"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 550,
@@ -909,7 +1042,10 @@
     "area": 55,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
-    "features": ["Gym", "Pool"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Pool"
+    },
     "agent_id": 305,
     "posted_date": "2025-11-12",
     "is_available": "yes",
@@ -936,7 +1072,9 @@
     "area": 75,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-3.jpg"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 306,
     "posted_date": "2025-10-21",
     "is_available": "yes",
@@ -963,7 +1101,11 @@
     "area": 65,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
-    "features": ["Gym", "Pool", "Parking"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Pool",
+      "feature_3": "Parking"
+    },
     "agent_id": 307,
     "posted_date": "2025-11-13",
     "is_available": "yes",
@@ -990,7 +1132,9 @@
     "area": 42,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 308,
     "posted_date": "2025-11-05",
     "is_available": "yes",
@@ -1017,7 +1161,10 @@
     "area": 130,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-1.webp"],
-    "features": ["Parking", "Garden"],
+    "features": {
+      "feature_1": "Parking",
+      "feature_2": "Garden"
+    },
     "agent_id": 309,
     "posted_date": "2025-11-10",
     "is_available": "yes",
@@ -1044,7 +1191,10 @@
     "area": 60,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-2.webp"],
-    "features": ["Elevator", "Security"],
+    "features": {
+      "feature_1": "Elevator",
+      "feature_2": "Security"
+    },
     "agent_id": 310,
     "posted_date": "2025-11-14",
     "is_available": "yes",
@@ -1053,7 +1203,10 @@
   },
   {
     "id": 41,
-    "title": { "en": "Land in Kampot", "km": "ដីនៅជិតទន្លេកំពត" },
+    "title": {
+      "en": "Land in Kampot",
+      "km": "ដីនៅជិតទន្លេកំពត"
+    },
     "type": "land",
     "purpose": "sale",
     "price": 90000,
@@ -1068,7 +1221,9 @@
     "area": 600,
     "unit": "m²",
     "images": ["/public/assets/images/properties/lands/land-3.webp"],
-    "features": ["Riverfront"],
+    "features": {
+      "feature_1": "Riverfront"
+    },
     "agent_id": 311,
     "posted_date": "2025-10-20",
     "is_available": "yes",
@@ -1077,7 +1232,10 @@
   },
   {
     "id": 42,
-    "title": { "en": "Modern Condo BKK3", "km": "ខុនដូទំនើបនៅ BKK3" },
+    "title": {
+      "en": "Modern Condo BKK3",
+      "km": "ខុនដូទំនើបនៅ BKK3"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 500,
@@ -1092,7 +1250,10 @@
     "area": 55,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
-    "features": ["Gym", "Security"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Security"
+    },
     "agent_id": 312,
     "posted_date": "2025-11-13",
     "is_available": "yes",
@@ -1101,7 +1262,10 @@
   },
   {
     "id": 43,
-    "title": { "en": "Shophouse in TK", "km": "ផ្ទះអាជីវកម្មនៅទួលគោក" },
+    "title": {
+      "en": "Shophouse in TK",
+      "km": "ផ្ទះអាជីវកម្មនៅទួលគោក"
+    },
     "type": "shophouse",
     "purpose": "sale",
     "price": 290000,
@@ -1118,7 +1282,9 @@
     "images": [
       "/public/assets/images/properties/shop_houses/shop_house-3.webp"
     ],
-    "features": ["Business Area"],
+    "features": {
+      "feature_1": "Business Area"
+    },
     "agent_id": 313,
     "posted_date": "2025-10-30",
     "is_available": "yes",
@@ -1145,7 +1311,9 @@
     "area": 50,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
-    "features": ["Balcony"],
+    "features": {
+      "feature_1": "Balcony"
+    },
     "agent_id": 314,
     "posted_date": "2025-11-10",
     "is_available": "yes",
@@ -1172,7 +1340,9 @@
     "area": 125,
     "unit": "m²",
     "images": ["/public/assets/images/properties/houses/house-2.webp"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 315,
     "posted_date": "2025-11-09",
     "is_available": "yes",
@@ -1181,7 +1351,10 @@
   },
   {
     "id": 46,
-    "title": { "en": "Condo Aeon 1", "km": "ខុនដូជិត Aeon 1" },
+    "title": {
+      "en": "Condo Aeon 1",
+      "km": "ខុនដូជិត Aeon 1"
+    },
     "type": "condo",
     "purpose": "sale",
     "price": 120000,
@@ -1196,7 +1369,10 @@
     "area": 55,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
-    "features": ["Gym", "Pool"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Pool"
+    },
     "agent_id": 316,
     "posted_date": "2025-11-12",
     "is_available": "yes",
@@ -1223,7 +1399,10 @@
     "area": 380,
     "unit": "m²",
     "images": ["/public/assets/images/properties/villas/villa-3.webp"],
-    "features": ["Garden", "Parking"],
+    "features": {
+      "feature_1": "Garden",
+      "feature_2": "Parking"
+    },
     "agent_id": 317,
     "posted_date": "2025-10-22",
     "is_available": "yes",
@@ -1232,7 +1411,10 @@
   },
   {
     "id": 48,
-    "title": { "en": "Condo Eden", "km": "ខុនដូជិត Eden Garden" },
+    "title": {
+      "en": "Condo Eden",
+      "km": "ខុនដូជិត Eden Garden"
+    },
     "type": "condo",
     "purpose": "rent",
     "price": 580,
@@ -1247,7 +1429,10 @@
     "area": 60,
     "unit": "m²",
     "images": ["/public/assets/images/properties/condos/condo-2.webp"],
-    "features": ["Gym", "Security"],
+    "features": {
+      "feature_1": "Gym",
+      "feature_2": "Security"
+    },
     "agent_id": 318,
     "posted_date": "2025-11-11",
     "is_available": "yes",
@@ -1276,7 +1461,9 @@
     "images": [
       "/public/assets/images/properties/commercials/commercial-3.webp"
     ],
-    "features": ["Main Road Access"],
+    "features": {
+      "feature_1": "Main Road Access"
+    },
     "agent_id": 319,
     "posted_date": "2025-10-29",
     "is_available": "yes",
@@ -1303,7 +1490,9 @@
     "area": 45,
     "unit": "m²",
     "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
-    "features": ["Parking"],
+    "features": {
+      "feature_1": "Parking"
+    },
     "agent_id": 320,
     "posted_date": "2025-11-13",
     "is_available": "yes",

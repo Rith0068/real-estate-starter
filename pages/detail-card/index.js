@@ -7,39 +7,14 @@ fetch("../../public/data/properties.json")
   .then((data) => {
     console.log(data);
     for (let i = 0; i < data.length; i++) {
-      if (data[i].id === 3) {
+      if (data[i].id == id) {
         sectionDetailElement.innerHTML = `
         <div class="detail-cols">
             <div class="left-cols">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-
-
-                    <div thumbsSlider="" class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <img src="/public/assets/images/apartment.jpeg" alt="">
+                                <img src="${data[i].images}" alt="">
                             </div>
 
                             <div class="swiper-slide">
@@ -56,8 +31,6 @@ fetch("../../public/data/properties.json")
                         </div>
                     </div>
 
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                    <script src="/scripts/index.js"></script>
             </div>
 
             <div class="right-cols">
@@ -66,24 +39,24 @@ fetch("../../public/data/properties.json")
                 </div>
 
                 <div class="location-cols">
-                    <span><i class="fas fa-home"></i> Apartment</span>
-                    <span><i class="fas fa-map-marker-alt"></i>Toul Kork</span>
+                    <span><i class="fas fa-home"></i> ${data[i].type}</span>
+                    <span><i class="fas fa-map-marker-alt"></i>${data[i].location.district}</span>
                 </div>
 
                 <div class="location-cols">
-                    <span><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
-                    <span><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                    <span><i class="fa-solid fa-bed"></i> ${data[i].bedrooms} Bedrooms</span>
+                    <span><i class="fa-solid fa-bath"></i> ${data[i].bathrooms} Bathrooms</span>
                     <span><i class="fas fa-shield-alt"></i> Secure 100%</span>
-                    <span><i class="far fa-calendar"></i> Since: <strong>2025-11-10</strong></span>
+                    <span><i class="far fa-calendar"></i> Since: <strong>${data[i].posted_date}</strong></span>
                 </div>
 
                 <div class="feature-cols">
                     <h1>Feature</h1>
 
                     <div class="cols-content">
-                        <span><i class="far fa-dot-circle"></i> Gym</span>
-                        <span><i class="far fa-dot-circle"></i> Balcony</span>
-                        <span><i class="far fa-dot-circle"></i> Parking</span>
+                        <span><i class="far fa-dot-circle"></i> ${data[i].features.feature_1}</span>
+                        <span><i class="far fa-dot-circle"></i> ${data[i].features.feature_2}</span>
+                        <span><i class="far fa-dot-circle"></i> ${data[i].features.feature_3}</span>
                     </div>
                 </div>
 
@@ -177,12 +150,3 @@ fetch("../../public/data/properties.json")
         `;
     }
   });
-
-// // fetch("../../public/data/properties.json")
-// //  .then((response) => response.json())
-// //  .then((data) => {
-// //     if (data.length > 0) {
-
-// }
-
-// //  })
