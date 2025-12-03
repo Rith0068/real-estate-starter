@@ -29,7 +29,7 @@
 
 .successful i {
   font-size: 90px;
-  color: var(--acent-hover);
+  color: red;
 }
 
 .t-sucess h1 {
